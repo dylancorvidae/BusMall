@@ -1,0 +1,21 @@
+body {
+    background: rgb(6,0,102);
+    background: linear-gradient(0deg, rgba(6,0,102,1) 0%, rgba(58,58,227,1) 5%, rgba(209,209,209,1) 100%);
+    background-repeat: no-repeat;
+    height: 1000px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    display:grid;
+    height:900px;
+}
+
+footer {
+    text-align: center;
+    color: lavender;
+}
