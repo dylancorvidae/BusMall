@@ -1,5 +1,5 @@
-import DisplayList from './display-list.js';
-import productsList from './data/products.js';
+// import DisplayList from './display-list.js';
+// import productsList from './data/products.js';
 
 
 
@@ -12,5 +12,5 @@ import productsList from './data/products.js';
 
 
 
-const userList = new DisplayList(productsList);
+//const userList = new DisplayList(productsList);
 
