@@ -28,3 +28,14 @@ test('remove a product from the list', assert => {
 
     assert.notOk(displayList.list.includes(removeProduct));
 });
+
+test('get three random products from the list', assert => {
+    const displayList = new DisplayList(productsList);
+    const productSelection1 = displayList.getThreeRandomProducts();
+
+    assert.equal(productSelection1.length, 3);
+    assert.notEqual(productSelection1[0], productSelection1[1]);
+    assert.notEqual(productSelection1[1], productSelection1[2]);
+    assert.notEqual(productSelection1[0], productSelection1[2]);
+    
+});

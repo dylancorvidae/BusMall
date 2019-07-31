@@ -20,11 +20,17 @@ class DisplayList {
                 return;
             }
         }
-
-        //save to display array
-        //loop 2 more times
     }
 
+    getThreeRandomProducts() {
+        const productSelection1 = [];
+        for(let i = 0; i < 3; i++){
+            const randomProduct = this.getRandomProduct();
+            productSelection1.push(randomProduct);
+            this.removeById(randomProduct.id);
+        }
+        return productSelection1;
+    }
 }
 
 export default DisplayList;
