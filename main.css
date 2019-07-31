@@ -17,6 +17,9 @@ header {
 main {
     text-align: center;
 }
+h2 {
+    margin: 150px 0px 60px 0px;
+}
 
 div.product-buttons {
     display: flex;
