@@ -5,7 +5,7 @@ const test = QUnit.test;
 
 QUnit.module('Display Product List');
 
-test('copy productsList/bootstrap productsList', assert => {
+test('copy productsList', assert => {
     const displayList = new DisplayList(productsList);
 
     assert.deepEqual(displayList.list, productsList);
