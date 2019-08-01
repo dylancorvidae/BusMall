@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: rgb(6,0,102);
+    background: linear-gradient(0deg, rgba(6,0,102,1) 0%, rgba(58,58,227,1) 5%, rgba(209,209,209,1) 100%);
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    text-align: center;
+}
+h2 {
+    margin: 150px 0px 60px 0px;
+}
