@@ -22,3 +22,20 @@ test('bootstrap products list', assert => {
 
     assert.deepEqual(products, productsList);
 });
+
+
+test('grab from purgatory when empty', assert => {
+    const purgatory = store.getPurgatory();
+    const emptyArray = [];
+
+    assert.deepEqual(purgatory, emptyArray);
+});
+
+test('grab from purgatory when filled', assert => {
+    store.save('purgatory', [1, 2, 3]);
+    const purgatory = store.getPurgatory();
+    const filledArray = [1, 2, 3];
+
+    assert.deepEqual(purgatory, filledArray);
+    store.save('purgatory', []);
+});

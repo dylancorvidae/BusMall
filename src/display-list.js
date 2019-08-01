@@ -1,4 +1,5 @@
 import { getRandomInt } from './utility.js';
+import store from './data/store.js';
 
 class DisplayList {
     constructor(products) {
@@ -29,6 +30,15 @@ class DisplayList {
             productSelection1.push(randomProduct);
             this.removeById(randomProduct.id);
         }
+        //grab purgatory
+        const productPurgatory = store.getPurgatory();
+        //add purgatory into this.list (Master List)
+        for(let i = 0; i < productPurgatory.length; i++){
+            const item = productPurgatory[i];
+            this.list.push(item);
+        } //save new 3 into purgatory
+        store.save('purgatory', productSelection1);
+
         return productSelection1;
     }
 }

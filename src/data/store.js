@@ -20,7 +20,15 @@ const store = {
             store.save('products', productsList);
         }
         return products;
-    }
+    },
+
+    getPurgatory(){
+        let purgatory = store.get('purgatory');
+        if(!purgatory) {
+            purgatory = [];
+        }
+        return purgatory;
+    },
 };
 
 export default store;
