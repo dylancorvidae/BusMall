@@ -47,6 +47,17 @@ img {
     object-fit: contain;
 }
 
+.hidden {
+    display: none;
+}
+
+#results {
+    width:80px;
+    height:50px;
+    margin: 10px;
+    border-radius: 5%;
+}
+
 footer {
     text-align: center;
     color: lavender;

@@ -11,7 +11,7 @@ const leftImg = document.getElementById('left-img');
 const centerImg = document.getElementById('center-img');
 const rightImg = document.getElementById('right-img');
 const productButtons = document.getElementById('product-buttons');
-
+const results = document.getElementById('results');
 
 let displayList = new DisplayList(productsList);
 let round = 0;
@@ -25,8 +25,6 @@ function display3Products() {
     //take productSelection1 put into my buttons
     
     const productSelection1 = displayList.getThreeRandomProducts();
-    
-    //
     
     //button left
     const item1 = productSelection1[0];
@@ -83,9 +81,8 @@ productButtons.addEventListener('click', (event) => {
 
     round++;
     if(round === 25) {
-        diplayResultsHTML();
+        results.classList.remove('hidden');
     } else {
-        console.log(round, 1);
         display3Products();
     }
 });
